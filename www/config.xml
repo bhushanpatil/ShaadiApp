@@ -42,7 +42,7 @@
     <gap:plugin name="org.apache.cordova.vibration" />
 
     <icon src="icon.png" />
-	<gap:splash src="slash.jpg" />
+	<gap:splash src="splash.jpg" />
     <gap:splash gap:platform="android" gap:qualifier="port-mdpi" src="res/screen/android/mdpi/splash.jpg" />
     <gap:splash gap:platform="android" gap:qualifier="port-xhdpi" src="res/screen/android/xhdpi/splash.jpg" />
     <gap:splash gap:platform="android" gap:qualifier="port-xxhdpi" src="res/screen/android/xxhdpi/splash.jpg" />
