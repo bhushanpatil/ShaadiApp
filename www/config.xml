@@ -1,58 +1,54 @@
-<?xml version='1.0' encoding='utf-8'?>
-<widget id="com.phonegap.shaadi" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.phonegap.shaadi" 
+  xmlns="http://www.w3.org/ns/widgets" 
+  xmlns:gap="http://phonegap.com/ns/1.0" version="1.0.0">
+  <!--Do not auto hide splash on Android-->
+  <description>Shaadi.com is a revolution that has touched over 30 million lives and has redefined the way Indian and other singles meet each other, all over the world</description>
+  <author email="support@peopleinteractive.in" href="http://peopleinteractive.in">People Interactive (I) Pvt. Ltd.</author>
+  <content src="http://www.shaadi.com/registration/user/login?ref=reg1"/>
+  <rim:permissions>
+    <rim:permit>use_camera</rim:permit>
+    <rim:permit>access_shared</rim:permit>
+    <rim:permit>run_when_backgrounded</rim:permit>
+  </rim:permissions>
+  <preference name="orientation" value="default"/>
+  <preference name="target-device" value="universal"/>
+  <preference name="fullscreen" value="true"/>
+  <preference name="webviewbounce" value="true"/>
+  <preference name="prerendered-icon" value="true"/>
+  <preference name="stay-in-webview" value="false"/>
+  <preference name="ios-statusbarstyle" value="black-opaque"/>
+  <preference name="detect-data-types" value="true"/>
+  <preference name="exit-on-suspend" value="false"/>
+  <preference name="show-splash-screen-spinner" value="true"/>
+  <preference name="auto-hide-splash-screen" value="false"/>
+  <preference name="AutoHideSplashScreen" value="false"/>
+  <preference name="SplashScreenDelay" value="2000"/>
+  <preference name="disable-cursor" value="false"/>
+  <preference name="android-minSdkVersion" value="7"/>
+  <preference name="android-installLocation" value="auto"/>
     <name>Shaadi.com</name>
-    <description>
-     Shaadi.com is a revolution that has touched over 30 million lives and has redefined the way Indian and other singles meet each other, all over the world
-    </description>
-    <author email="support@peopleinteractive.in" href="http://peopleinteractive.in">
-        People Interactive (I) Pvt. Ltd.
-    </author>
-
-    <content src="http://www.shaadi.com/registration/user/login?ref=reg1" />  
-	
+  <gap:plugin name="org.apache.cordova.camera"/>
+  <gap:plugin name="org.apache.cordova.media-capture"/>
+  <gap:plugin name="org.apache.cordova.console"/>
+  <gap:plugin name="org.apache.cordova.dialogs"/>
+  <gap:plugin name="org.apache.cordova.file"/>
+  <gap:plugin name="org.apache.cordova.file-transfer"/>
+  <gap:plugin name="org.apache.cordova.inappbrowser"/>
+  <gap:plugin name="org.apache.cordova.media"/>
+  <gap:plugin name="org.apache.cordova.splashscreen"/>
+  <gap:plugin name="org.apache.cordova.vibration"/>
+  <icon src="icon.png"/>
+  <gap:splash src="splash.jpg"/>
+  <gap:splash gap:platform="android" gap:qualifier="port-mdpi" src="res/screen/android/mdpi/splash.jpg"/>
+  <gap:splash gap:platform="android" gap:qualifier="port-xhdpi" src="res/screen/android/xhdpi/splash.jpg"/>
+  <gap:splash gap:platform="android" gap:qualifier="port-xxhdpi" src="res/screen/android/xxhdpi/splash.jpg"/>
+  <gap:splash gap:platform="blackberry" src="res/screen/blackberry/splash.png"/>
+  <gap:splash gap:platform="winphone" src="res/screen/windows-phone/splash.png"/>
+  <access origin="*"/>
+  <rim:splash src="splash.jpg"/>
 	<feature name="http://api.phonegap.com/1.0/file"/>
 	<feature name="http://api.phonegap.com/1.0/camera"/>
 	<feature name="http://api.phonegap.com/1.0/media"/>
     <feature name="http://api.phonegap.com/1.0/network"/>
-	<feature name="SplashScreen" value="SplashScreen" />
-
-    <preference name="orientation" value="default" />
-    <preference name="target-device" value="universal" />
-    <preference name="fullscreen" value="true" />
-    <preference name="webviewbounce" value="true" />
-    <preference name="prerendered-icon" value="true" />
-    <preference name="stay-in-webview" value="false" />
-    <preference name="ios-statusbarstyle" value="black-opaque" />
-    <preference name="detect-data-types" value="true" />
-    <preference name="exit-on-suspend" value="false" />
-    <preference name="show-splash-screen-spinner" value="true" />
-    <preference name="auto-hide-splash-screen" value="false" />
-
-	<preference name="AutoHideSplashScreen" value="false" />
-	<!-- Do not auto hide splash on Android -->
-	<preference name="SplashScreenDelay" value="2000"/>
-	
-    <preference name="disable-cursor" value="false" />
-    <preference name="android-minSdkVersion" value="7" />
-    <preference name="android-installLocation" value="auto" />
-    
-    <gap:plugin name="org.apache.cordova.camera" />
-    <gap:plugin name="org.apache.cordova.media-capture" />
-    <gap:plugin name="org.apache.cordova.console" />
-    <gap:plugin name="org.apache.cordova.dialogs" />
-    <gap:plugin name="org.apache.cordova.file" />
-    <gap:plugin name="org.apache.cordova.file-transfer" />
-    <gap:plugin name="org.apache.cordova.inappbrowser" />
-    <gap:plugin name="org.apache.cordova.media" />
-    <gap:plugin name="org.apache.cordova.splashscreen" />
-    <gap:plugin name="org.apache.cordova.vibration" />
-
-    <icon src="icon.png" />
-	<gap:splash src="splash.jpg" />
-    <gap:splash gap:platform="android" gap:qualifier="port-mdpi" src="res/screen/android/mdpi/splash.jpg" />
-    <gap:splash gap:platform="android" gap:qualifier="port-xhdpi" src="res/screen/android/xhdpi/splash.jpg" />
-    <gap:splash gap:platform="android" gap:qualifier="port-xxhdpi" src="res/screen/android/xxhdpi/splash.jpg" />
-    <gap:splash gap:platform="blackberry" src="res/screen/blackberry/splash.png" />
-    <gap:splash gap:platform="winphone" src="res/screen/windows-phone/splash.png" />
-    <access origin="*" />
+  <feature name="SplashScreen" value="SplashScreen"/>
 </widget>
