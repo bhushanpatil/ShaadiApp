@@ -1,16 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.phonegap.shaadi" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Shaadi.com</name>
     <description>
-      Shaadi.com is a revolution that has touched over 30 million lives and has redefined the way Indian & other singles meet each other, all over the world.
-With a match being found every 2.4 seconds, we are proud to be the world's largest platform for matchmaking and matrimony.
+     Shaadi.com is a revolution that has touched over 30 million lives and has redefined the way Indian and other singles meet each other, all over the world
     </description>
     <author email="support@peopleinteractive.in" href="http://peopleinteractive.in">
         People Interactive (I) Pvt. Ltd.
     </author>
     <content src="http://www.shaadi.com/registration/user/login?ref=reg1" />
     
-	<preference name="permissions" value="none" />
+	
 	<feature name="http://api.phonegap.com/1.0/file"/>
 	<feature name="http://api.phonegap.com/1.0/camera"/>
 	<feature name="http://api.phonegap.com/1.0/media"/>
@@ -39,13 +38,11 @@ With a match being found every 2.4 seconds, we are proud to be the world's large
     <gap:plugin name="org.apache.cordova.file-transfer" />
     <gap:plugin name="org.apache.cordova.inappbrowser" />
     <gap:plugin name="org.apache.cordova.media" />
-
     <gap:plugin name="org.apache.cordova.splashscreen" />
     <gap:plugin name="org.apache.cordova.vibration" />
 
-    <icon src="shaadi.jpg" />
-
-	<gap:splash src="slash.png" />
+    <icon src="icon.png" />
+	<gap:splash src="slash.jpg" />
     <gap:splash gap:platform="android" gap:qualifier="port-mdpi" src="res/screen/android/mdpi/splash.jpg" />
     <gap:splash gap:platform="android" gap:qualifier="port-xhdpi" src="res/screen/android/xhdpi/splash.jpg" />
     <gap:splash gap:platform="android" gap:qualifier="port-xxhdpi" src="res/screen/android/xxhdpi/splash.jpg" />
