@@ -2,13 +2,20 @@
 <widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Shaadi.com</name>
     <description>
-      Shaadi.com
+      Shaadi.com is a revolution that has touched over 30 million lives and has redefined the way Indian & other singles meet each other, all over the world.
+With a match being found every 2.4 seconds, we are proud to be the world's largest platform for matchmaking and matrimony.
     </description>
     <author email="support@peopleinteractive.in" href="http://peopleinteractive.in">
-        PhoneGap Team
+        People Interactive (I) Pvt. Ltd.
     </author>
     <content src="http://www.shaadi.com/registration/user/login?ref=reg1" />
-    <preference name="permissions" value="none" />
+    
+
+	<feature name="http://api.phonegap.com/1.0/file"/>
+	<feature name="http://api.phonegap.com/1.0/camera"/>
+	<feature name="http://api.phonegap.com/1.0/media"/>
+    <feature name="http://api.phonegap.com/1.0/network"/>
+
     <preference name="orientation" value="default" />
     <preference name="target-device" value="universal" />
     <preference name="fullscreen" value="true" />
@@ -35,23 +42,14 @@
 
     <gap:plugin name="org.apache.cordova.splashscreen" />
     <gap:plugin name="org.apache.cordova.vibration" />
-    <icon src="Shaadi.png" />
-    <icon gap:platform="android" gap:qualifier="ldpi" src="www/res/icon/android/icon-36-ldpi.png" />
-    <icon gap:platform="android" gap:qualifier="mdpi" src="www/res/icon/android/icon-48-mdpi.png" />
-    <icon gap:platform="android" gap:qualifier="hdpi" src="www/res/icon/android/icon-72-hdpi.png" />
-    <icon gap:platform="android" gap:qualifier="xhdpi" src="www/res/icon/android/icon-96-xhdpi.png" />
-    <icon gap:platform="blackberry" src="www/res/icon/blackberry/icon-80.png" />
-    <icon gap:platform="blackberry" gap:state="hover" src="www/res/icon/blackberry/icon-80.png" />
-    
-    <icon gap:platform="winphone" src="res/icon/windows-phone/icon-48.png" />
-    <icon gap:platform="winphone" gap:role="background" src="res/icon/windows-phone/icon-173-tile.png" />
+
+    <icon src="shaadi.jpg" />
 
 	<gap:splash src="slash.png" />
-    <gap:splash gap:platform="android" gap:qualifier="port-ldpi" src="res/screen/android/screen-ldpi-portrait.png" />
-    <gap:splash gap:platform="android" gap:qualifier="port-mdpi" src="res/screen/android/screen-ldpi-portrait.png" />
-    <gap:splash gap:platform="android" gap:qualifier="port-hdpi" src="res/screen/android/screen-ldpi-portrait.png" />
-    <gap:splash gap:platform="android" gap:qualifier="port-xhdpi" src="res/screen/android/screen-ldpi-portrait.png" />
-    <gap:splash gap:platform="blackberry" src="res/screen/blackberry/screen-225.png" />
-    <gap:splash gap:platform="winphone" src="res/screen/windows-phone/Shaadi.png" />
+    <gap:splash gap:platform="android" gap:qualifier="port-mdpi" src="res/screen/android/mdpi/splash.jpg" />
+    <gap:splash gap:platform="android" gap:qualifier="port-xhdpi" src="res/screen/android/xhdpi/splash.jpg" />
+    <gap:splash gap:platform="android" gap:qualifier="port-xxhdpi" src="res/screen/android/xxhdpi/splash.jpg" />
+    <gap:splash gap:platform="blackberry" src="res/screen/blackberry/splash.png" />
+    <gap:splash gap:platform="winphone" src="www/res/screen/windows-phone/splash.png" />
     <access origin="*" />
 </widget>
