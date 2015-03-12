@@ -7,8 +7,8 @@
     <author email="support@peopleinteractive.in" href="http://peopleinteractive.in">
         People Interactive (I) Pvt. Ltd.
     </author>
-    <content src="http://www.shaadi.com/registration/user/login?ref=reg1" />
-    
+
+    <content src="http://www.shaadi.com/registration/user/login?ref=reg1" />  
 	
 	<feature name="http://api.phonegap.com/1.0/file"/>
 	<feature name="http://api.phonegap.com/1.0/camera"/>
@@ -47,6 +47,6 @@
     <gap:splash gap:platform="android" gap:qualifier="port-xhdpi" src="res/screen/android/xhdpi/splash.jpg" />
     <gap:splash gap:platform="android" gap:qualifier="port-xxhdpi" src="res/screen/android/xxhdpi/splash.jpg" />
     <gap:splash gap:platform="blackberry" src="res/screen/blackberry/splash.png" />
-    <gap:splash gap:platform="winphone" src="www/res/screen/windows-phone/splash.png" />
+    <gap:splash gap:platform="winphone" src="res/screen/windows-phone/splash.png" />
     <access origin="*" />
 </widget>
